@@ -14,8 +14,9 @@ function TodoPage() {
     const [showEditTodo, setShowEditTodo] = useState(false);
     const [task, setTask] = useState('');
     const [selectedTodoId, setSelectedTodoId] = useState(null);
+    // eslint-disable-next-line
     const [selectedTodoText, setSelectedTodoText] = useState('');
-     const navigate = useNavigate();
+    const navigate = useNavigate();
 
     function handleSignOut() {
     const auth = getAuth();
@@ -26,8 +27,7 @@ function TodoPage() {
     .catch((error) => {
       console.log(error)
     });
-}
-
+    }
 
     function handleSubmit(event) {
             event.preventDefault();
@@ -99,7 +99,7 @@ function TodoPage() {
     update(todoRef, {
         completed: !todo.completed
     });
-}
+    }
 
     return (<div className={style.wrapPage}>
         <button className={style.buttonLogout} onClick={handleSignOut}>Log out</button>

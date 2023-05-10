@@ -7,7 +7,6 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
-import TodoPage from '../Todo/TodoPage'
 import SignIn from './SignIn';
 
 
@@ -27,7 +26,7 @@ function Authentication() {
     if (user) {
       setState({ ...state, hasAccount: true });
     }
-  }, []);
+  }, [state]);
 
 
   function handleChange({ target: { value, id } }) {
