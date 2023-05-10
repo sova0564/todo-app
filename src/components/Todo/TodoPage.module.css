@@ -61,8 +61,11 @@
   cursor: pointer;
 }
 
-.checkboxActive {
-  background: #974f90;
+.checkboxActive::after {
+  content: "\2713";
+  color: #000;
+  font-size: 15px;
+  font-weight: 800;
 }
 
 .text {
