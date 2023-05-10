@@ -21,7 +21,7 @@ function TodoPage() {
     const auth = getAuth();
     signOut(auth)
     .then(() => {
-       navigate('/auth');
+       navigate('/');
     })
     .catch((error) => {
       console.log(error)

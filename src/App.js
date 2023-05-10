@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route path="/auth" element={<Authentication />} />
+          <Route path="/" element={<Authentication />} />
           <Route path="/todo" element={<TodoPage />} />
         </Routes>
       </div>
